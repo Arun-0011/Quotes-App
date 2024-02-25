@@ -11,7 +11,11 @@ import com.example.quotes.databinding.ActivityMainBinding
 import com.example.quotes.quotes.viewmodels.QuotesViewModel
 import com.example.quotes.util.ApiResponse
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.yield
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
